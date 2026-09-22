@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Notes App</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e6b6b6;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+.notes-container {
+    display: grid;
+    
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.note {
+    background: #fff8c6;
+    padding: 15px;
+    border-radius: 10px;
+    min-height: 150px;
+    box-shadow: 0 4px 10px rgba(231, 204, 204, 0.1);
+    outline: none;
+    cursor: text;
+    transition: transform 1s;
+}
+
+.note:hover {
+    transform: scale(1.003);
+}
+
+.note:focus {
+    background: #fff3a0;
+}
+
+</style>
+</head>
+
+<body>
+
+<header><h1>Journaling</h1></header>
+
+<div class="notes-container">
+
+    <div class="note" contenteditable="true">
+        Thought of the day.
+    </div>
+
+    <div class="note" contenteditable="true">
+        Daily Dairy.
+    </div>
+
+    <div class="note" contenteditable="true">
+        Add your ideas here.
+    </div>
+    
+    <div class="note" contenteditable="true">
+        Gratitude.
+    </div>
+
+</div>
+
+</body>
+</html>
